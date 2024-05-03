@@ -1,10 +1,30 @@
 {
   "project_info": {
     "project_number": "580522566993",
+    "firebase_url": "https://control-app-auth-default-rtdb.europe-west1.firebasedatabase.app",
     "project_id": "control-app-auth",
     "storage_bucket": "control-app-auth.appspot.com"
   },
   "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580522566993:android:fe3e59cfac94d1ef0edf70",
+        "android_client_info": {
+          "package_name": "com.IDL2.childcontrolapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2E0BWTcMRpiXNLSn_i3Yby6EQjEehJhM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
     {
       "client_info": {
         "mobilesdk_app_id": "1:580522566993:android:34b4bf6266cda5170edf70",

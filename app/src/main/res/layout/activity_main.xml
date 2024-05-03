@@ -6,21 +6,101 @@
     android:layout_height="match_parent"
     android:gravity="center"
     >
+    
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="@string/select"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_complete_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="You're logged in!" />
+        android:text="Choose the duration"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp" />
 
-    <Button
-        android:layout_width="120dp"
-        android:layout_height="60dp"
-        android:id="@+id/logoutButton"
-        android:text="Logout"
-        android:textSize="18sp"
-        android:layout_marginTop="30dp"
-        android:backgroundTint="@color/blue"
-        app:cornerRadius = "20dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        >
+        <NumberPicker
+            android:id="@+id/hoursPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            />
+
+        <NumberPicker
+            android:id="@+id/minutesPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+
+        <NumberPicker
+            android:id="@+id/secondsPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose the Bed Time"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp" />
+
+    <NumberPicker
+        android:id="@+id/bedTimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:gravity="center" >
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:id="@+id/logoutButton"
+            android:text="Logout"
+            android:textSize="18sp"
+            android:layout_margin="30dp"
+            android:backgroundTint="@color/blue"
+            app:cornerRadius = "20dp"/>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:id="@+id/submitButton"
+            android:text="Submit"
+            android:textSize="18sp"
+            android:layout_margin="30dp"
+            android:backgroundTint="@color/blue"
+            app:cornerRadius = "20dp"/>
+
+    </LinearLayout>
+
 
 
 

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Mobile Application V2</string>
+    <string name="select">Choose the App</string>
 </resources>
